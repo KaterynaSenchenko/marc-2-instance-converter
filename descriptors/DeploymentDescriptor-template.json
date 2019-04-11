@@ -1,0 +1,6 @@
+{
+  "srvcId": "${artifactId}-${version}",
+  "descriptor": {
+    "exec": "java -jar ../mod-data-loader/target/marc-2-instance-converter-fat.jar -Dhttp.port=%p"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "id": "${artifactId}-${version}",
+  "name": "Marc to instance converter",
+  "provides": [
+    {
+      "id": "data-loader",
+      "version": "1.0",
+      "handlers": [
+        {
+          "methods": ["POST"],
+          "pathPattern": "/load/marc-rules"
+        },
+        {
+          "methods": ["POST"],
+          "pathPattern": "/load/marc-data/test"
+        }
+      ]
+    },
+    {
+      "id": "_tenant",
+      "version": "1.2",
+      "interfaceType": "system",
+      "handlers": [
+        {
+          "methods": [ "POST" ],
+          "pathPattern": "/_/tenant"
+        }
+      ]
+    }
+  ],
+  "requires": [
+  ]
+}
